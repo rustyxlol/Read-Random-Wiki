@@ -1,6 +1,7 @@
 const wikiScreen = document.getElementById('wikiScreen');
 const randButton = document.getElementById('randButton');
 const prevButton = document.getElementById('prevButton');
+const viewWiki = document.getElementById('viewWikiLink');
 
 // buttons for mobile
 const randButtonm = document.getElementById('randButtonm');
@@ -26,6 +27,10 @@ prevButton.addEventListener('click', goToPage);
 
 randButtonm.addEventListener('click', goToPage);
 prevButtonm.addEventListener('click', goToPage);
+
+viewWiki.addEventListener('click', () => {
+  viewWiki.href = pageURL;
+})
 
 async function fetchPages() {
   const URL = "https://en.m.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=10&format=json&origin=*";

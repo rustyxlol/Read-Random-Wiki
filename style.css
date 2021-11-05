@@ -141,11 +141,13 @@ button#viewWiki:hover {
   gap: 10px;
 }
 
+#viewWikiButton {
+  width: 100%;
+}
+
 .wikiButtons-mobile {
   display: none;
 }
-
-
 
 
  /* Smartphones (portrait and landscape) ----------- */

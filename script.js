@@ -63,7 +63,6 @@ function validateRand() {
 function goToPage(e)
 {
   currButton = e.target.id;
-  console.log(index, currButton);
   validateRand();
   if (currButton === 'prevButton' || currButton === 'prevButtonm') {
     index--;

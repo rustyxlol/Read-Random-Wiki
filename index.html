@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Random</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setTimeout('checkWidth()', 300)">
+  <div class="container">
+    <div class="top-row">
+      <div class="title">
+        <span class="random">Random</span>
+        <span class="read">Read</span>
+      </div>
+    </div>
+
+    <div class="main-row">
+      <div class="wikiButtons-mobile">
+        <button id="prevButtonm" class="prev-btn">Previous</button>
+        <button id="randButtonm" class="rand-btn">Random Article</button>
+      </div>
+      <div class="wikiFrame">
+        <iframe id="wikiScreen" src="" frameborder="0"></iframe>
+      </div>
+      <div class="wikiSideBar">
+        <div class="wikiButtons">
+          <button id="randButton" class="rand-btn">Random Article</button>
+          <button id="prevButton" class="prev-btn">Previous</button>
+        </div>
+
+        <div class="bottom-sidebar">
+          <button id="viewWiki">View on Wikipedia</button>
+          <div class="about">
+            <div class="about-content">
+              <p class="made-by">
+                Made by
+                <a href="https://github.com/rustyxlol">@rustyxlol</a>
+                as the final project for CS50x.
+              </p>
+              <div class="view-gh">
+                <a href="http://www.google.com" class="gh-link">
+                  <span class="view-on">View on GitHub</span>
+                  <img src="./github.svg" alt="Github" width="30px">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
